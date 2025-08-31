@@ -1,0 +1,51 @@
+<!-- Task: Create a contact form with the following fields:
+• Full name (text input)
+• Email (email input)
+• Phone number (tel input)
+• Subject (dropdown menu)
+• Message (textarea)
+• Submit button
+Additional Requirements:
+• Use appropriate form validation using required, minlength, maxlength, and
+pattern.
+• Link form labels with their corresponding inputs using the forattribute -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <label for="A">Full Name:</label>
+        <input type="text" name="A" id="" /><br /><br />
+        <label for="B">Email:</label>
+        <input type="email" name="B" id="" /><br /><br />
+        <label for="C">Phone Number:</label>
+        <input
+          type="tel"
+          name="C"
+          id=""
+          maxlength="10"
+          minlength="10"
+        /><br /><br />
+
+        <label for="D">Subject:</label>
+        <select name="D" required>
+          <option value="" name="D">--Select Subject--</option>
+          <option value="physics">Physics</option>
+          <option value="chemistry">Chemistry</option>
+          <option value="maths">Maths</option></select
+        ><br /><br />
+
+        <label for="E">Message:</label>
+        <textarea name="E" id="" minlength="10"></textarea><br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

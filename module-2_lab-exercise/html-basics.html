@@ -1,0 +1,109 @@
+<!-- Task: Create a simple HTML webpage that includes:
+    • A header (<header>), footer (<footer>), main section (<main>), and aside section
+    (<aside>).
+    • A paragraph with some basic text.
+    • A list (both ordered and unordered).
+    • A link that opens in a new tab. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple HTML webpage</title>
+    <style>
+      body {
+        font-family: cursive;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header,
+      footer {
+        background-color: #28221e;
+        color: white;
+        text-align: center;
+        padding: 5px;
+      }
+      main {
+        /* flex: 1; */
+        padding: 20px;
+        background-color: #614e41;
+        color: #cecbc8;
+      }
+      aside {
+        background-color: #7f6951;
+        padding: 20px;
+        color: #cecbc8;
+      }
+      .container {
+        display: flex;
+        flex: 1;
+      }
+      .content {
+        flex: 3;
+        padding: 20px;
+      }
+      .sidebar {
+        flex: 1;
+        padding: 20px;
+      }
+      a {
+        color: #28221e;
+        text-decoration: none;
+      }
+      a:hover {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Simple Webpage</h1>
+    </header>
+
+    <div class="container">
+      <main class="content">
+        <h2>Main Content</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
+          maiores quasi delectus dolorem atque quo molestias consequuntur hic
+          est ratione consectetur dolores nemo ab numquam dolor suscipit ullam
+          quibusdam praesentium repellat minima, obcaecati qui! Illum nihil
+          temporibus quam amet aperiam!
+        </p>
+        <h3>My friends name:</h3>
+
+        <ul type="square">
+          <li>Kavan</li>
+          <li>Parth</li>
+          <li>Hani</li>
+          <li>Khushal</li>
+        </ul>
+
+        <h3>My friends name according to their age:</h3>
+        <ol type="i">
+          <li>Parth</li>
+          <li>Kavan</li>
+          <li>Khushal</li>
+          <li>Hani</li>
+        </ol>
+      </main>
+      <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <p>This is my website.</p>
+        <a
+          href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wikipedia.org/&ved=2ahUKEwjb_uvM8MOLAxXbxTgGHYkKDKsQFnoECAoQAQ&usg=AOvVaw3ay7vaEtH0yTTYdDmrvinX"
+          target="_blank"
+          ><i>➡️click here to open</i></a
+        >
+      </aside>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Simple Webpage. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!-- Task: Create a product catalog table that includes the following columns:
+• Product Name
+• Product Image (use placeholder image URLs)
+• Price
+• Description
+• Availability (in stock, out of stock)
+Additional Requirements:
+• Use theadfor the table header.
+• Add a border and some basic styling using inline CSS.
+• Use colspanor rowspanto merge cells where applicable -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #deb3ad">
+    <h1 style="text-align: center; color: blue">Laptops</h1>
+    <table
+      border="2px"
+      style="border-collapse: collapse; background-color: #f9f1f0"
+      ;
+    >
+      <tr style="background-color: #e1999f">
+        <th>Item No.</th>
+        <th>Product Name</th>
+        <th>Image</th>
+        <th>Price(INR)</th>
+        <th>Description</th>
+        <th>Availability</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td>Lenovo ideapad Slim 3</td>
+        <td>
+          <img
+            src="https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_Slim_3_15IRH8/IdeaPad_Slim_3_15IRH8_CT2_01.png"
+            alt=""
+            height="150px"
+            width="150px"
+          />
+        </td>
+        <td>50,000</td>
+        <td>
+          Lenovo IdeaPad Slim 3 12th Gen Intel Core i5-12450H 15.6" (39.6cm) FHD
+          IPS Thin & Light Laptop (16GB/512GB SSD/Win 11/Office 21/Backlit
+          KB/Alexa Built-in/1 Year ADP Free/Arctic Grey/1.6Kg), 83ER008GIN
+        </td>
+        <td>Unavailable</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Macbook Air M1</td>
+        <td>
+          <img
+            src="https://img-prd-pim.poorvika.com/prodvarval/apple-macbook-air-m1-chip-with-8-core-cpu-and-7-core-gpu-mac-os-laptop-gold.png"
+            alt=""
+            height="150px"
+            width="150px"
+          />
+        </td>
+        <td>67,990</td>
+        <td>
+          Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina
+          Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD
+          Camera, Touch ID. Works with iPhone/iPad; Space Grey
+        </td>
+        <td rowspan="2">Available</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Asus Vivobook 16</td>
+        <td>
+          <img
+            src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1736342939/Croma%20Assets/Computers%20Peripherals/Laptop/Images/309105_0_fzav3k.png"
+            alt=""
+            height="150px"
+            width="150px"
+          />
+        </td>
+        <td>65,490</td>
+        <td>
+          ASUS Vivobook 16, Thin & Light Laptop, 16" (40.64cm)WUXGA 16:10 60 Hz,
+          Intel Core i7-12700H (16GB DDR4/512GB SSD/Intel Iris Xe Graphics/Win
+          11/Office 2021/Transparent Silver/1.88 Kg), X1605ZAC-MB741WS
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
